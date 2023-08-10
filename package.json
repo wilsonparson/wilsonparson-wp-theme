@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "Theme for Wilson Parson's personal website",
   "scripts": {
-    "build:css": "sass scss/main.scss css/style.css",
-    "watch:css": "npm run build:css -- --watch"
+    "build": "tailwindcss -i ./css/tailwind.css -o ./css/style.css",
+    "dev": "npm run build -- --watch"
   },
   "devDependencies": {
-    "sass": "^1.64.1"
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.3"
   },
   "prettier": {
     "semi": false,

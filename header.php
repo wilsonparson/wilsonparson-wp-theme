@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark:bg-slate-800 dark:text-gray-300">
 
 <head>
     <meta charset="UTF-8">
@@ -8,4 +8,5 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body class="mx-auto p-4 max-w-prose prose dark:prose-invert md:prose-lg">
+    <?php get_template_part('template-parts/header') ?>
