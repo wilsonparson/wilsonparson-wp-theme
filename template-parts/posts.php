@@ -5,9 +5,12 @@
             the_post();
     ?>
             <article class="post">
-                <a href="<?php the_permalink(); ?>">
-                    <?php the_post_thumbnail(); ?>
-                </a>
+                <?php
+                if (has_post_thumbnail()) { ?>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_post_thumbnail(); ?>
+                    </a>
+                <?php } ?>
                 <h2 class="post-title">
                     <a href="<?php the_permalink(); ?>">
                         <?php the_title(); ?>
@@ -23,6 +26,7 @@
                     <p><?php the_tags(''); ?></p>
                 </div>
             </article>
+            <hr>
     <?php
         }
     }

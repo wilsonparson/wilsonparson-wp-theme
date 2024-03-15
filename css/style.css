@@ -77,7 +77,7 @@ body {
   color: var(--color-body);
   max-width: 80ch;
   margin: 0 auto;
-  padding: 24px;
+  padding: 0 24px 24px;
 }
 
 p,
@@ -100,7 +100,7 @@ a:hover {
 hr {
   border: none;
   border-top: 1px solid var(--color-border);
-  margin: 2em 0;
+  margin: 16px 0;
 }
 
 h1,
@@ -119,23 +119,16 @@ img {
 }
 
 #header {
-  margin-bottom: 32px;
-}
-#header .home-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: var(--color-headings);
-}
-#header .name {
-  font-family: monospace;
+  margin: 16px 0;
 }
 
 #wp-logo {
   fill: var(--color-logo);
 }
 
+#single .title {
+  margin-top: 0;
+}
 #single .meta {
   font-size: 0.875rem;
   color: var(--color-text-low-contrast);
@@ -160,11 +153,13 @@ img {
 
 #posts .post {
   color: inherit;
+  margin: 24px 0;
 }
-#posts .post + .post {
-  padding-top: 48px;
-  border-top: var(--color-border) solid 1px;
-  margin-top: 48px;
+#posts .post-title {
+  margin-bottom: 0;
+}
+#posts .post-title:first-child {
+  margin-top: 0;
 }
 #posts .post-title a {
   color: inherit;

@@ -3,18 +3,21 @@
 #posts {
   .post {
     color: inherit;
+    margin: 24px 0;
   }
 
-  .post + .post {
-    padding-top: 48px;
-    border-top: var(--color-border) solid 1px;
-    margin-top: 48px;
-  }
+  .post-title {
+    margin-bottom: 0;
 
-  .post-title a {
-    color: inherit;
-    &:hover {
-      color: var(--color-text-accent);
+    &:first-child {
+      margin-top: 0;
+    }
+
+    a {
+      color: inherit;
+      &:hover {
+        color: var(--color-text-accent);
+      }
     }
   }
 
