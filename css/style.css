@@ -11,19 +11,20 @@
   --mauve-10: #84828e;
   --mauve-11: #65636d;
   --mauve-12: #211f26;
-  --violet-1: #fdfcfe;
-  --violet-2: #faf8ff;
-  --violet-3: #f4f0fe;
-  --violet-4: #ebe4ff;
-  --violet-5: #e1d9ff;
-  --violet-6: #d4cafe;
-  --violet-7: #c2b5f5;
-  --violet-8: #aa99ec;
-  --violet-9: #6e56cf;
-  --violet-10: #654dc4;
-  --violet-11: #6550b9;
-  --violet-12: #2f265f;
+  --indigo-1: #fdfdfe;
+  --indigo-2: #f7f9ff;
+  --indigo-3: #edf2fe;
+  --indigo-4: #e1e9ff;
+  --indigo-5: #d2deff;
+  --indigo-6: #c1d0ff;
+  --indigo-7: #abbdf9;
+  --indigo-8: #8da4ef;
+  --indigo-9: #3e63dd;
+  --indigo-10: #3358d4;
+  --indigo-11: #3a5bc7;
+  --indigo-12: #1f2d5c;
 }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --mauve-1: #121113;
@@ -38,28 +39,25 @@
     --mauve-10: #7c7a85;
     --mauve-11: #b5b2bc;
     --mauve-12: #eeeef0;
-    --violet-1: #14121f;
-    --violet-2: #1b1525;
-    --violet-3: #291f43;
-    --violet-4: #33255b;
-    --violet-5: #3c2e69;
-    --violet-6: #473876;
-    --violet-7: #56468b;
-    --violet-8: #6958ad;
-    --violet-9: #6e56cf;
-    --violet-10: #7d66d9;
-    --violet-11: #baa7ff;
-    --violet-12: #e2ddfe;
+    --indigo-1: #11131f;
+    --indigo-2: #141726;
+    --indigo-3: #182449;
+    --indigo-4: #1d2e62;
+    --indigo-5: #253974;
+    --indigo-6: #304384;
+    --indigo-7: #3a4f97;
+    --indigo-8: #435db1;
+    --indigo-9: #3e63dd;
+    --indigo-10: #5472e4;
+    --indigo-11: #9eb1ff;
+    --indigo-12: #d6e1ff;
   }
 }
-
 :root {
   --color-text-high-contrast: var(--mauve-12);
   --color-text-low-contrast: var(--mauve-11);
-  --color-text-accent: var(--violet-11);
+  --color-text-accent: var(--indigo-11);
   --color-border: var(--mauve-5);
-  --color-component-bg-solid: var(--violet-9);
-  --color-component-bg-solid-hover: var(--violet-10);
   --color-heading: var(--color-text-high-contrast);
   --color-body: var(--color-text-high-contrast);
   --color-logo: var(--mauve-12);
@@ -130,7 +128,8 @@ img {
   margin-top: 0;
 }
 #single .meta {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
+  font-family: monospace;
   color: var(--color-text-low-contrast);
 }
 #single .meta a {
@@ -172,7 +171,8 @@ img {
   color: var(--color-text-low-contrast);
 }
 #posts .meta {
-  font-size: 0.875rem;
+  font-family: monospace;
+  font-size: 0.75rem;
   color: var(--color-text-low-contrast);
 }
 #posts .meta a {
