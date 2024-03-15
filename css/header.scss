@@ -1,0 +1,15 @@
+#header {
+  margin-bottom: 32px;
+
+  .home-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--color-headings);
+  }
+
+  .name {
+    font-family: monospace;
+  }
+}

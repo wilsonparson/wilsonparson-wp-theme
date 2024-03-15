@@ -1,0 +1,54 @@
+@use 'media';
+
+#posts {
+  .post {
+    background: var(--color-subtle-bg);
+    border-radius: 16px;
+    color: inherit;
+    display: block;
+    overflow: hidden;
+
+    @include media.laptop {
+      border-radius: 32px;
+    }
+  }
+
+  .post + .post {
+    margin-top: 48px;
+  }
+
+  .content {
+    padding: 24px;
+  }
+
+  .attachment-post-thumbnail {
+    width: 100%;
+  }
+
+  .post-title a {
+    color: inherit;
+  }
+
+  .meta {
+    font-size: 0.875rem;
+    color: var(--color-text-low-contrast);
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .read-more {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 24px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+
+    a {
+      border: solid 1px;
+      padding: 12px;
+      border-radius: 8px;
+    }
+  }
+}

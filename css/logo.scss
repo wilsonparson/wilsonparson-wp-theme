@@ -1,0 +1,9 @@
+@use 'media';
+
+#wp-logo {
+  fill: var(--color-logo);
+
+  @include media.laptop {
+    width: 80px;
+  }
+}

@@ -1,0 +1,28 @@
+#single {
+  .meta {
+    font-size: 0.875rem;
+    color: var(--color-text-low-contrast);
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .prev-next {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+
+    > * {
+      flex: 1;
+    }
+
+    > :first-child {
+      text-align: left;
+    }
+
+    > :last-child {
+      text-align: right;
+    }
+  }
+}
