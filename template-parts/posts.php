@@ -19,11 +19,11 @@
                 <div class="excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <div class="meta">
+                <div class="post-meta--global">
                     <p>
                         <datetime><?php the_date(); ?></datetime>
                     </p>
-                    <p><?php the_tags(''); ?></p>
+                    <p class="tags--global"><?php the_tags('', ''); ?></p>
                 </div>
             </article>
             <hr>

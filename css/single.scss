@@ -3,16 +3,6 @@
     margin-top: 0;
   }
 
-  .meta {
-    font-size: 0.75rem;
-    font-family: monospace;
-    color: var(--color-text-low-contrast);
-
-    a {
-      color: inherit;
-    }
-  }
-
   .prev-next {
     display: flex;
     justify-content: space-between;

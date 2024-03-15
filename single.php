@@ -3,10 +3,10 @@
 
 <main id="single">
     <h1 class="title"><?php the_title(); ?></h1>
-    <div class="meta">
+    <div class="post-meta--global">
         <datetime><?php the_date(); ?></datetime>
-        <p>
-            <?php the_tags(''); ?>
+        <p class="tags--global">
+            <?php the_tags('', ''); ?>
         </p>
     </div>
     <hr>
