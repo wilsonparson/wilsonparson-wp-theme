@@ -3,6 +3,22 @@
     margin-top: 0;
   }
 
+  .tags {
+    margin: 32px 0;
+    font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    a {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 8px;
+      background: var(--mauve-4);
+      color: var(--color-text-low-contrast);
+    }
+  }
+
   .prev-next {
     display: flex;
     justify-content: space-between;

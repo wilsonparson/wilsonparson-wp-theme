@@ -19,12 +19,9 @@
                 <div class="excerpt">
                     <?php the_excerpt(); ?>
                 </div>
-                <div class="post-meta--global">
-                    <p>
-                        <datetime><?php the_date(); ?></datetime>
-                    </p>
-                    <p class="tags--global"><?php the_tags('', ''); ?></p>
-                </div>
+                <p>
+                    <datetime><?php the_date(); ?></datetime>
+                </p>
             </article>
             <hr>
     <?php
