@@ -4,7 +4,7 @@
 <main id="single">
     <h1 class="title"><?php the_title(); ?></h1>
     <datetime><?php the_date(); ?></datetime>
-    <p class="tags">
+    <p class="tags-global">
         <?php the_tags('', ''); ?>
     </p>
     <hr>

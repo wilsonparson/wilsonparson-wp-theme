@@ -20,8 +20,13 @@
                     <?php the_excerpt(); ?>
                 </div>
                 <p>
-                    <datetime><?php the_date(); ?></datetime>
-                </p>
+                    <?php if (has_tag()) : ?>
+                <div class="tags-global">
+                    <?php the_tags('', ''); ?>
+                </div>
+            <?php endif; ?>
+            <datetime><?php the_date(); ?></datetime>
+            </p>
             </article>
             <hr>
     <?php
