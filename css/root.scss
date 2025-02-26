@@ -76,3 +76,10 @@
   --color-component-text-high-contrast: var(--indigo-12);
   --color-component-text-low-contrast: var(--indigo-11);
 }
+
+// High contrast body text feels harsher in dark mode
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: var(--color-text-low-contrast);
+  }
+}

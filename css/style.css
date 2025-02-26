@@ -74,6 +74,11 @@
   --color-component-text-low-contrast: var(--indigo-11);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-body: var(--color-text-low-contrast);
+  }
+}
 * {
   box-sizing: border-box;
 }
@@ -169,10 +174,12 @@ textarea {
 label {
   display: block;
   margin-bottom: 8px;
+  color: var(--color-text-high-contrast);
 }
 
 summary {
   cursor: pointer;
+  color: var(--color-text-high-contrast);
 }
 
 button,
@@ -284,6 +291,7 @@ input[type=submit] {
 #comments cite {
   font-style: normal;
   font-weight: 600;
+  color: var(--color-text-high-contrast);
 }
 #comments .says {
   display: none;
