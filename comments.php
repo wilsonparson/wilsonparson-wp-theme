@@ -5,4 +5,5 @@
             <?php wp_list_comments(); ?>
         </ul>
     </div>
+    <hr>
 <?php endif ?>

@@ -195,7 +195,7 @@ input[type=submit] {
   margin-top: 0;
 }
 #single .tags {
-  margin: 32px 0;
+  margin: 16px 0;
   font-size: 0.75rem;
   display: flex;
   flex-wrap: wrap;

@@ -4,12 +4,12 @@
 <main id="single">
     <h1 class="title"><?php the_title(); ?></h1>
     <datetime><?php the_date(); ?></datetime>
-    <hr>
-    <?php the_post_thumbnail(); ?>
-    <?php the_content(); ?>
     <p class="tags">
         <?php the_tags('', ''); ?>
     </p>
+    <hr>
+    <?php the_post_thumbnail(); ?>
+    <?php the_content(); ?>
     <hr>
     <?php if (comments_open()) : ?>
         <details>
@@ -20,10 +20,9 @@
                 'format' => 'html5',
             )); ?>
         </details>
+        <hr>
     <?php endif; ?>
-    <hr>
     <?php comments_template(); ?>
-    <hr>
     <nav class="prev-next">
         <div><?php previous_post_link(); ?></div>
         <div><?php next_post_link(); ?></div>
