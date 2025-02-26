@@ -1,0 +1,12 @@
+#respond {
+  a {
+    color: inherit;
+  }
+
+  #reply-title small {
+    display: block;
+    margin-top: 12px;
+    font-weight: normal;
+    color: var(--color-text-low-contrast);
+  }
+}

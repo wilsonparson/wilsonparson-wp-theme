@@ -63,6 +63,15 @@
   --color-logo: var(--mauve-12);
   --color-site-bg: var(--mauve-1);
   --color-subtle-bg: var(--mauve-2);
+  --color-input-bg: var(--mauve-3);
+  --color-component-bg: var(--indigo-3);
+  --color-component-bg-hover: var(--indigo-4);
+  --color-component-bg-active: var(--indigo-5);
+  --color-cta-bg: var(--indigo-9);
+  --color-cta-bg-hover: var(--indigo-10);
+  --color-cta-text: #fff;
+  --color-component-text-high-contrast: var(--indigo-12);
+  --color-component-text-low-contrast: var(--indigo-11);
 }
 
 * {
@@ -123,6 +132,57 @@ datetime {
   color: var(--color-text-low-contrast);
 }
 
+input:not([type=submit]),
+textarea {
+  display: block;
+  width: 100%;
+  background: var(--color-input-bg);
+  color: inherit;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: inherit;
+  padding: 12px;
+}
+input:not([type=submit]):focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-text-accent);
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+summary {
+  cursor: pointer;
+}
+
+button,
+input[type=submit] {
+  cursor: pointer;
+  background: var(--color-cta-bg);
+  color: var(--color-cta-text);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+button:hover,
+input[type=submit]:hover {
+  background: var(--color-cta-bg-hover);
+}
+
+input[type=submit] {
+  margin-top: 12px;
+}
+
 #header {
   margin: 16px 0;
 }
@@ -181,6 +241,51 @@ datetime {
 }
 #posts .excerpt {
   font-size: 0.875rem;
+  color: var(--color-text-low-contrast);
+}
+
+#respond a {
+  color: inherit;
+}
+#respond #reply-title small {
+  display: block;
+  margin-top: 12px;
+  font-weight: normal;
+  color: var(--color-text-low-contrast);
+}
+
+#comments ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#comments a {
+  color: var(--color-text-low-contrast);
+}
+#comments .comment {
+  padding: 16px 0;
+}
+#comments .comment + .comment {
+  border-top: 1px solid var(--color-border);
+}
+#comments cite {
+  font-style: normal;
+  font-weight: 600;
+}
+#comments .says {
+  display: none;
+}
+#comments .avatar {
+  display: none;
+}
+#comments .comment-meta {
+  font-size: 0.875rem;
+  color: var(--color-text-low-contrast);
+}
+#comments .comment-reply-link {
+  font-size: 0.875rem;
+}
+#comments .comment-reply-title a {
   color: var(--color-text-low-contrast);
 }
 

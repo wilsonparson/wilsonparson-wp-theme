@@ -11,6 +11,19 @@
         <?php the_tags('', ''); ?>
     </p>
     <hr>
+    <?php if (comments_open()) : ?>
+        <details>
+            <summary>Leave a comment</summary>
+            <?php comment_form(array(
+                'title_reply' => null,
+                'comment_notes_before' => null,
+                'format' => 'html5',
+            )); ?>
+        </details>
+    <?php endif; ?>
+    <hr>
+    <?php comments_template(); ?>
+    <hr>
     <nav class="prev-next">
         <div><?php previous_post_link(); ?></div>
         <div><?php next_post_link(); ?></div>

@@ -1,0 +1,49 @@
+#comments {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    color: var(--color-text-low-contrast);
+  }
+
+  .comment {
+    padding: 16px 0;
+  }
+
+  .comment + .comment {
+    border-top: 1px solid var(--color-border);
+  }
+
+  cite {
+    font-style: normal;
+    font-weight: 600;
+  }
+
+  // TODO: Remove this via Walker
+  .says {
+    display: none;
+  }
+
+  // TODO: Remove this via Walker
+  .avatar {
+    display: none;
+  }
+
+  .comment-meta {
+    font-size: 0.875rem;
+    color: var(--color-text-low-contrast);
+  }
+
+  .comment-reply-link {
+    font-size: 0.875rem;
+  }
+
+  .comment-reply-title {
+    a {
+      color: var(--color-text-low-contrast);
+    }
+  }
+}
