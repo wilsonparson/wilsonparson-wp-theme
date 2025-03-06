@@ -4,18 +4,22 @@
     margin: 24px 0;
   }
 
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var(--color-text-accent);
+      .post-title {
+        color: inherit;
+      }
+    }
+  }
+
   .post-title {
     margin-bottom: 0;
 
     &:first-child {
       margin-top: 0;
-    }
-
-    a {
-      color: inherit;
-      &:hover {
-        color: var(--color-text-accent);
-      }
     }
   }
 

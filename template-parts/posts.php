@@ -5,17 +5,15 @@
             the_post();
     ?>
             <article class="post">
-                <?php
-                if (has_post_thumbnail()) { ?>
-                    <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>">
+                    <?php
+                    if (has_post_thumbnail()) { ?>
                         <?php the_post_thumbnail(); ?>
-                    </a>
-                <?php } ?>
-                <h2 class="post-title">
-                    <a href="<?php the_permalink(); ?>">
+                    <?php } ?>
+                    <h2 class="post-title">
                         <?php the_title(); ?>
-                    </a>
-                </h2>
+                    </h2>
+                </a>
                 <div class="excerpt">
                     <?php the_excerpt(); ?>
                 </div>

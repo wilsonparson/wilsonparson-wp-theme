@@ -247,17 +247,20 @@ input[type=submit] {
   color: inherit;
   margin: 24px 0;
 }
+#posts a {
+  color: inherit;
+}
+#posts a:hover {
+  color: var(--color-text-accent);
+}
+#posts a:hover .post-title {
+  color: inherit;
+}
 #posts .post-title {
   margin-bottom: 0;
 }
 #posts .post-title:first-child {
   margin-top: 0;
-}
-#posts .post-title a {
-  color: inherit;
-}
-#posts .post-title a:hover {
-  color: var(--color-text-accent);
 }
 #posts .excerpt {
   font-size: 0.875rem;
