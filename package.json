@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Theme for Wilson Parson's personal website",
   "scripts": {
-    "build": "sass css/style.scss css/style.css",
+    "build": "sass css/style.scss css/style.css --style compressed",
     "live-reload": "browser-sync start --proxy wilsonparson.local --files 'css/*.css' 'js/*.js' '*.php'",
     "dev": "concurrently \"npm run build -- --watch\" \"npm run live-reload\""
   },
